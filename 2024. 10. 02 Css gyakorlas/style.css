@@ -1,0 +1,116 @@
+body{
+	background-color:red;
+	margin: 0px;
+}
+
+.header{
+	height:450px;
+	/* background-repeat:no-repeat; */ /*(no-)repeat - (nem) ismétli a képet*/
+	background-size: contain; /*szélességét*/
+	/* background-size: cover; */ /*maggasságát*/
+	background-attachment: fixed;
+}
+
+.hatter1{
+	background-image: url("kepek/fejlec.jpg");	
+}
+.hatter2{
+	background-image: url("kepek/fejlec2.jpg");
+}
+
+.header p{
+	margin: 0px;
+	text-align:center;
+	font-size: 40px;
+	
+	text-shadow: 3px 3px 5px black;
+	letter-spacing: 5px;
+	padding-top: 100px;
+	
+	color: beige;
+	/*color: rgb(0,0,0);*/
+	/*
+		1 Byte = 8 bit 00000000 
+		R: 8 bit G: 8 bit B: 8 bit		
+	*/
+	/*color: rgba(255,0,0,0.5);*/
+	/*
+		rgb(16,255,11)
+		#10ff0b
+	*/
+	/*color: #3f66ab;*/
+	/* Hexadecimális: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F */
+}
+
+
+.masodik_blokk{
+	height:300px;
+}
+
+
+.feher-hatteres{
+	background-color:lightgray;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+.szoveg-kep{
+	background-color:white;
+	width: 50%;
+	height: 100%;
+	
+}
+
+.feher-hatteres img{
+	/*width: 30%;	*/
+	height: 70%;
+	position: relative;
+	top: 15%; 
+	opacity: 50%; /*[0,1] -> [0,100%]*/
+	/*
+		15% -> 0.15
+		78,3% -> 0.783
+	*/
+}
+
+.szoveg-kep-belso{
+	/* .szoveg-kep-belso */
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	position:relative;
+	top: 10%;
+	padding: 10px;
+	text-align: center;
+	overflow: scroll;
+}
+
+.szoveg-kep-belso img{
+	height: 50%;
+}
+
+.szoveg-kep-belso p{
+	text-align: left;
+	line-height: 32px;
+}
+
+h2{
+	margin-top:0;
+}
+
+.bal{
+	float: left;
+}
+
+.jobb{
+	float: right;
+}
+
+a{
+	text-decoration:none;
+}
+
+/*
+color, opacity, background*, border*, box-shadow, box-sizing, margin*, padding*, overflow, display, float, z-index, rel,
+width*, height*, top, bottom, left, right, position, line-height, text-align, vertical-align, textjustify, texttransform, font, font-family, font-size, font-style, text-decoration, list-style*, cursor, letter-spacing, viewport, white-space
+*/

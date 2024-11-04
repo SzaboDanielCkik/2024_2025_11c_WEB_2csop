@@ -1,0 +1,60 @@
+body{
+    background-color: aquamarine;
+}
+
+.header{
+    /*border: 1px solid gray;*/
+    background-image: url("2-nature.jpg");
+    padding-top: 40px;
+    letter-spacing: 3px;
+    background-attachment: fixed;
+}
+
+.cim{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    text-shadow: 8px 8px 10px white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    height: 450px;
+}
+
+.szoveg-kep{
+    border: 1px solid black;
+    margin: auto;
+    width: 80%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+    text-align: center;
+}
+#kep{
+    border: 1px solid red;
+    position: absolute;
+    height: 60%;
+    top: 20%;
+}
+.szurke-hatteres{
+    background-color: lightgrey;
+    border: 1px solid blue;
+}
+
+
+
+.feher-hatteres{
+    background-color: white;
+}
+/*.container-fluid{
+    box-shadow: 5px 5px 8px black;
+}*/
+/*
+
+#kep2{
+    height: 60%;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 20%;
+}*/

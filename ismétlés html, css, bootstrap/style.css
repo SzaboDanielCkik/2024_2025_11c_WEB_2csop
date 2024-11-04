@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(185, 125, 13);
+}
+.header{
+    /*border: 1px solid gray;*/
+    background-image: url("képek/fejlec.jpg");
+    background-attachment: fixed; 
+    background-size: contain;   
+}
+.header2{
+    /*border: 1px solid gray;*/
+    background-image: url("képek/fejlec2.jpg");
+    background-attachment: fixed; 
+    background-size: contain;   
+}
+.cim{
+    height: 450px;
+    text-align: center;
+    font-size: 40px;
+    color: beige;
+    text-shadow: 5px 5px 8px black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 40px;
+    letter-spacing: 3px;
+}
+/*.container-fluid{
+    box-shadow: 5px 5px 8px black   ;
+}*/
+.row{
+    height: 450px;
+}
+.szurke-hatteres{
+    background-color: lightgray;
+}
+
+.szurke-hatteres img{
+    height: 70%;
+    position: relative;
+    top:15%;
+}
+.feher-hatteres{
+    background-color: white;
+}
+.feher-hatteres img{
+    width: 30%;
+}
+.szoveg-kep{
+    margin:auto;
+    width: 80%;
+    height: 70%;
+    position: relative;
+    top:15%;
+}
+
+@media screen and (max-width:1100px) {
+    .feher-hatteres img{
+        visibility: hidden;
+    }
+}

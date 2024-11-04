@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<title>Ismétlés</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css">
+		
+		<style>
+			h1{
+				color:green;
+			}
+		</style>
+		
+	</head>
+	<!-- <body style="tulajdonság: értéke; tul2:érték2;"> -->
+	<body style="background-color:lightblue; color:red">
+		<h1>Év eleji ismétlés</h1>
+		
+		<h2>Tartalomjegyzék</h2>
+		
+		<ul>
+			<li><a href="#hiperhiv">Hiperhivatkozás</a></li>
+		</ul>
+		
+		<h2>Címsorok használata</h2>
+		
+		<h1>Címsor1</h1>
+		<h2>Címsor2</h2>
+		<h3>Címsor3</h3>
+		<h4>Címsor4</h4>
+		<h5>Címsor5</h5>
+		<h6>Címsor6</h6>
+		
+		<h2>Bekezdés</h2>
+		
+		<p id="elsoBekezdes">Lorem ipsum <b>dolor sit amet</b>, consectetur adipiscing elit. Quisque vitae lacus sit amet <strong>lorem ultrices cursus</strong>. Mauris tempor, enim in dictum aliquet, dui turpis lobortis purus, id maximus est erat eget tellus. In eu luctus est. <i>In hac habitasse platea</i> dictumst.<br>Mauris convallis at mi quis vestibulum. <em>Sed nec aliquet lectus</em>. Integer viverra metus non quam convallis ultrices. Donec viverra nisi ut enim efficitur, non iaculis ante gravida. Maecenas orci eros, aliquet nec aliquet ac, scelerisque non leo. Nam ultrices odio in nisi tincidunt auctor. <u>Donec feugiat mi euismod</u> ligula ullamcorper tincidunt.</p>
+		<p>
+		<span>Pellentesque maximus consequat</span> leo quis aliquam. Mauris vulputate hendrerit magna eu imperdiet. Maecenas non arcu viverra, vehicula libero nec, vehicula eros. Morbi eget tortor tempor, dapibus turpis nec, eleifend est. Praesent vel erat at sem gravida elementum in et nunc. Integer congue diam eu lacus varius feugiat. Sed at mi nulla. Mauris ac lacus sed lacus eleifend eleifend sit amet in nisl. Morbi id luctus ante. Sed lorem dolor, iaculis imperdiet nisi ullamcorper, rhoncus finibus tellus. Sed et auctor dui, ac ullamcorper ipsum. Etiam finibus odio sit amet metus semper bibendum in nec ex. Curabitur blandit massa vel ullamcorper pellentesque.</p>
+		
+		<h2>Vízszintes vonal</h2>
+		
+		<hr/>
+		
+		<h2>Felsorolás</h2>
+		
+		<!-- <ul type="square"> -->
+		<ul class="felsorolas">
+			<li>Szimbólums lista1</li>
+			<li>Szimbólums lista2</li>
+			<li>Szimbólums lista3</li>
+			<li>Szimbólums lista4</li>
+		</ul>
+		<ol>
+		<!-- <ol type="1"> -->
+			<li>Számozott lista1</li>
+			<li>Számozott lista2</li>
+			<!-- <ul type="square"> -->
+			<li>
+				<ol class="felsorolas">
+					<li>Számozott lista1</li>
+					<li>Számozott lista2</li>
+					<li>Számozott lista3</li>
+					<li>Számozott lista4</li>
+				</ol>
+			</li>
+			<li>Számozott lista3</li>
+			<li>Számozott lista4</li>
+		</ol>
+		
+		
+		<h2>Képek</h2>
+		
+		<!-- <a href="../kepek/tajkep1.jpg"> -->
+		
+			<figure>
+				<img src="../kepek/tajkep1.jpg" alt="tajkep1" title="tájkép1" width="200"/>	
+				<figcaption>Tájkép</figcaption>
+			</figure>
+		
+		
+		<!-- </a> -->
+		
+		<h2 id="hiperhiv" >Hiperhivatkozás</h2>
+		
+		<p>Szöveg
+			<!-- <a href="https://google.com">Kattintson rám!</a> -->
+			<a href="../kepek/tajkep1.jpg" target="_blank">Kattintson rám!</a>
+		</p>
+		
+		<h2>Táblázat</h2>
+		
+		<table border="1" width="600">		
+			<caption>Tábla neve</caption>
+			<thead>
+				<tr>
+					<th>Első oszlop</th>
+					<th>Második oszlop</th>
+					<th>Harmadik oszlop</th>
+					<th>Negyedik oszlop</th>
+				</tr>			
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="3">
+						A B C
+					</td>
+					<td>
+						1
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">
+						D G
+					</td>
+					<td>
+						E
+					</td>
+					<td colspan="2" rowspan="2">
+						F 2 I 3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						H
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table border="1">
+			<tr>
+				<td>
+					A
+				</td>
+				<td>
+				
+					B
+				</td>
+				<td>
+				
+					C
+				</td>
+				<td>
+					1
+				</td>
+			</tr>
+			<tr>
+				<td>
+					D
+				</td>
+				<td>
+					E
+				</td>
+				<td>
+					F
+				</td>
+				<td>
+					2
+				</td>
+			</tr>
+			<tr>
+				<td>
+					G
+				</td>
+				<td>
+					H
+				</td>
+				<td>
+					I
+				</td>
+				<td>3</td>
+			</tr>
+		</table>
+		
+		<h2>Házi feladat (Táblázat)</h2>
+		
+		<table border="1">
+			<tr>
+				<td>1</td>
+				<td rowspan="3">X</td>
+				<td>X</td>
+				<td>X</td>
+				<td rowspan="2">X</td>
+			</tr>
+			<tr>
+				<td>2</td>				
+				<td rowspan="2" colspan="2">X</td>
+			</tr>
+			<tr>
+				<td rowspan="3">3</td>		
+				<td>X</td>
+			</tr>
+			<tr>
+				<td>X</td>
+				<td>X</td>
+				<td colspan="2">X</td>
+			</tr>
+			<tr>
+				<td rowspan="2" colspan="3">X</td>
+				<td>X</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>X </td>
+			</tr>
+		</table>
+		
+		<!-- <b></b> -->
+		<!-- <strong></strong> -->
+		<!-- <i></i> -->
+		<!-- <em></em> -->
+		<!-- <u></u> -->
+		<!-- <span></span> -->
+		<!-- <figure></figure> -->
+		<!-- <figcaption></figcaption> -->
+		<!-- table,th, caption  -->
+	</body>
+</html>

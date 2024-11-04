@@ -1,0 +1,102 @@
+body{
+	background-color: lightgreen;
+	color: brown;
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: cursive;
+}
+
+#div{
+	/*border: 1px solid black;*/
+	border-width:2px;
+	border-style:dotted;
+	border-top-style:solid;
+	border-color:red;
+	border-bottom-color:blue;
+	
+	padding: 10px;
+	/*padding: 5px 10px; fel-le, bal-jobb*/
+	/*padding: 10px 15px 5px; fel bal-jobb le*/
+	/*padding: 10px 9px 8px 7px; fel jobb le bal*/
+	
+	margin: 10px;
+	
+	box-shadow: inset -5px -5px 8px gray;
+}
+
+#doboz{
+	width: 200px;
+	height: 100px;
+	border: 1px solid black;
+	/*box-shadow: -8px -8px 20px black;*/
+	box-shadow: 8px 8px 20px black;
+	margin: 0px 0px 0px 10px; 
+	font-style: italic;
+	font-weight: bold;
+	text-align:center;
+	margin: auto;
+}
+
+img{
+	width:200px;
+	float: right;
+}
+
+.alma{
+	color:red;
+	/* font-weight: bold; */
+}
+
+.körte{
+	color:green;
+	/* font-weight: bold; */
+}
+
+.alma, .körte{
+	font-weight:bold;
+}
+
+div .körte{
+	font-size:20px;
+}
+
+div>.körte
+{
+	font-family: courier;
+	/* display: block; */
+}
+
+div>.alma{
+	display: block;
+}
+
+
+.belso{
+	display: inherit;
+}
+
+/*
+display: inline, block, inherit, none, initial, inline-block
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+color, opacity, background*, border*, 
+box-shadow, box-sizing, margin*, padding*, overflow, display, float, z-index, rel,
+width*, height*, top, bottom, left, right, position, line-height, text-align, vertical-align, textjustify, texttransform, font, font-family, font-size, font-style, text-decoration, list-style*, cursor, letter-spacing, viewport, white-space), és ezek segítségével képes elvégezni a megfelelő formázási műveleteket (a *-gal jelölt elemek 
+több jellemzőt tartalmaznak, pl. margin-left, margin-right
+*/

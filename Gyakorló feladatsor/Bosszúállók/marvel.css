@@ -1,0 +1,81 @@
+body {
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 80%;
+    background-size: 50vh;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0px 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#csapat li {
+    margin-bottom: 10px;
+}
+
+header, footer {
+    background-color: rgba(123, 0, 0, 0.9);
+    color: #fff;
+    font-variant: small-caps;
+    padding-top: 20px;
+    overflow: auto;
+}
+
+header li a {
+    font-size: 150%;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+    background-color: rgba(90, 0, 0, 0.5);
+    padding: 20px;
+}
+
+header img {
+    width: 7vw;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0 auto;
+    clear: both;
+}
+
+section ul li:before {
+    content: "⍟ ";
+    color: rgba(200, 0, 0);;
+}
+
+footer p {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 25em;
+}
+
