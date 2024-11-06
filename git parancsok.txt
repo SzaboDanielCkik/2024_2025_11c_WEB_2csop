@@ -1,0 +1,9 @@
+git init
+git branch -M Main
+
+
+git add .
+git commit -m "2024_11_04"
+
+
+git remote add origin https://
