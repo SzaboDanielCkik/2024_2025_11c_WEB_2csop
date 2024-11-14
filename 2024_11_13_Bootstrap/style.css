@@ -1,0 +1,17 @@
+body{
+    /*background-image: url("kepek/1-nature.jpg");*/
+}
+
+.container{
+    background-color: rgba(0, 128, 0,0.3);
+    padding: 3px;
+}
+
+.row{
+     border: 1px solid red;
+}
+
+.row div{
+    /* margin: 1px; */
+    border: 1px dotted blue;
+}
