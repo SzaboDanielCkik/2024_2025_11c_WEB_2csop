@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Űrlap</title>
+    </head>
+    <body>
+        <h1>Űrlap használat</h1>
+        <form>
+            <p>
+                <label>Név: </label>
+                <input type="text" placeholder="példaszöveg">
+            </p>
+            <p>
+                <label>Email: </label>
+                <input type="email" placeholder="valami@valami.v">
+            </p>
+            <p>
+                <label>Születési év: </label>
+                <input type="number" value="2000" min="1904" max="2024">
+            </p>
+            <p>
+                <label>Legmagasabb iskolai végzettség</label>
+                <p>
+                    <input type="radio" name="vegzettseg" checked>
+                    <label>8 általános</label>
+                    <br>
+                    <input type="radio" name="vegzettseg">
+                    <label>Érettségi</label>
+                    <br>
+                    <input type="radio" name="vegzettseg" checked>
+                    <label>Egyetem</label>
+                    <br>
+                </p>
+            </p>
+            <p>
+                <label>Neme</label>
+                <p>
+                    <input type="radio" name="vegzettseg2" >
+                    <label>Férfi</label>
+                    <br>
+                    <input type="radio" name="vegzettseg2">
+                    <label>Nő</label>
+                </p>
+            </p>
+            <p>
+                <label>Kedvenc színe(i)</label>
+                <p>
+                    <input type="checkbox" value="zöld">
+                    <label>Zöld</label>
+                    <br>
+                    <input type="checkbox" value="piros">
+                    <label>Piros</label>
+                    <br>
+                    <input type="checkbox" value="kék">
+                    <label>Kék</label>
+                    <br>
+                    <input type="checkbox" value="sárga">
+                    <label>Sárga</label>
+                    <br>
+                </p>
+            </p>
+            <input type="button" value="OK" disabled>
+            <input type="submit">
+            <button>Kilépés</button>
+            <input type="reset" value="Adatok törlése" >
+        </form>
+    </body>
+</html>
