@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+    background-color: rgba(0, 100, 0,0.8);
+    /* border: 2px solid black; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+legend{
+    font-weight: bold;
+}
+body{
+    background-image: url("kepek/2-nature.jpg");
+}
+fieldset{
+    border: 2px  solid green ;
+    border-radius: 15px;
+}
+
+.textareaDiv{
+    width: 60%;
+    margin: auto;
+}
+
+textarea{
+    width: 100%;
+}
+
+#csuszka{
+    width: 100%;
+}
