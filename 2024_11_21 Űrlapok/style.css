@@ -1,6 +1,9 @@
 h1{
     text-align: center;
+    text-shadow: 0px 0px 8px rgb(0, 255, 0), 0px 0px 3px white;
 }
+
+
 form{
     width: 50%;
     margin: auto;
@@ -9,7 +12,25 @@ form{
     /* border: 2px solid black; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    box-shadow: -5px -5px 8px black;
 }
+
+
+#formstyle{
+    background-color: rgba(0, 0, 100,0.8);
+}
+
+form#formstyle{
+    background-color: rgba(255, 255, 0, 0.8) !important; 
+}
+
+.formclass{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+form.formclass{
+    background-color: rgba(255, 0, 200, 0.8);
+}
+
 legend{
     font-weight: bold;
 }
@@ -19,6 +40,7 @@ body{
 fieldset{
     border: 2px  solid green ;
     border-radius: 15px;
+    box-shadow: inset -5px -5px 8px rgba(0, 0, 0, 0.726);
 }
 
 .textareaDiv{
@@ -32,4 +54,16 @@ textarea{
 
 #csuszka{
     width: 100%;
+}
+
+fieldset img{
+    width: 100px;
+}
+
+#imgFieldset{
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
