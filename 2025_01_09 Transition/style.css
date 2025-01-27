@@ -1,0 +1,70 @@
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    padding: 0px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 33%;
+    text-align: center;
+}
+nav:hover{
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color: aqua;
+    color: black;
+    border-radius: 10px;
+    /* letter-spacing: 2px; */
+    text-shadow: 5px 5px 8px black;
+    transition: 0.8s;
+}
+
+nav a{
+    position: relative;
+}
+
+nav a::before
+{
+    content: "";
+    height: 2px;
+    width: calc(100% - 2em);
+    position: absolute;
+    background-color: black;
+    font-size: 0.5em;
+    bottom: 1em;
+    left:1em;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 3s;
+}
+
+nav a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+nav a::after{
+    content: " Szöveget tesz mögé";
+    font-size: 0.5em;
+}
+
+/* ul li:nth-child(odd){
+    background-color: yellow;
+}
+
+ ul li:nth-child(even){
+    background-color: green;
+}  */
+
+ul li:nth-child(3n-1){
+    background-color: yellow;
+}
+

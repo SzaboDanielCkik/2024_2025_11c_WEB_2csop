@@ -1,0 +1,153 @@
+/* Alap stílusok */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+header {
+    position: relative;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.anim_kep{
+    /* animation-timing-function: linear; */
+    width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.anim_kep img{
+    position: absolute;
+    animation-name: mozog; 
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+    width: 80px;
+    border-radius: 20%;
+    box-shadow: 3px 3px 8px white, -3px -3px 8px white;
+}
+@keyframes mozog {
+    0% {
+        transform: translateX(0);
+        transform: scale(1);
+    }
+
+    50% {
+        transform: translateX(500px) scaleX(-1);
+
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: scale(1);
+    }
+}
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: fadeIn 2s ease-out;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Galéria stílusok */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.description {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Animációk */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    animation: slideIn 3s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Reszponzív dizájn */
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

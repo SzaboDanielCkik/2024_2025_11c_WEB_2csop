@@ -1,0 +1,95 @@
+body{
+    background-color: beige;
+}
+
+div{
+    background-color: burlywood;
+    border:1px solid black;
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    margin: 3vw;
+}
+
+/*Forgatás*/
+#forgatas1{
+    border-radius: 10px 0 0 0;
+    transform: rotate(-60deg);
+}
+
+#forgatas1:hover{
+    background-color: rgb(139, 110, 72);
+}
+
+
+#forgatas2{
+    border-radius: 10px 0 0 0;
+    transform: rotate(0.1turn);
+    transition: transform 3s;
+}
+
+#forgatas3:hover{
+    border-radius: 10px 0 0 0;
+    transform: rotateY(60deg);
+    transition: transform 3s;
+}
+
+/*Nagyítás*/
+#nagyitas1{
+    border-radius: 20px;
+    transform: scale(1.5);
+    box-shadow: 5px 5px 8px black;
+    background-color: brown;
+    transition: border-radius 10s, transform 8s, box-shadow 5s,background-color 15s;
+}
+
+#nagyitas2{
+    transform: scale(.5);
+}
+#nagyitas3{
+    transform: scaleY(10%);
+}
+/*Eltolás*/
+#eltolas1{
+    transform: translate(30px, -30px);
+}
+#eltolas2{
+    transform: translate(20px, 3vw);
+}
+#eltolas3{
+    transform: translateX(50%);
+}
+
+/*Ferdites*/
+
+#ferdites1{
+    transform: skew(30deg);
+}
+#ferdites2{
+    transform: skew(0, 30deg);
+}
+
+/*Középpont áthelyezése*/
+
+#kph1{
+    transform-origin: top;    
+    transform: scale(0.5);
+}
+
+#kph2{
+    transform-origin: top right;
+    transform: scale(1.4);
+}
+
+/*Középre igazítás vertikálisan*/
+#vertikalis{
+    position: relative;
+}
+
+#vertikalis a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: aqua;
+    transform: translate(-50%, -50%);
+}

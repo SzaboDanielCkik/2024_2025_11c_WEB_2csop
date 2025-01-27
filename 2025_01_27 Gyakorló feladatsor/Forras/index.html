@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagyon állat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="uzletunk.html">Üzletünk</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Vásároljon Ön is a <span>Nagyon állat</span> kisállat kereskedésben!</h1>
+
+        <section id="ertekeles">
+            <img src="images/happy_customer.png">
+            <h2>Ügyfelek véleménye üzletünkről</h2>
+            <p>4.5/5</p>
+            <p>18 315 értékelés!</p>
+            <div id="csik"></div>
+        </section>
+
+        <section>
+            <h2>Kategóriák</h2>
+            <div>
+                <div class="kategoria">
+                    <p>Kutya</p>
+                    <a href=""><img src="images/categories/dog.png"></a>
+                </div>
+                <div class="kategoria">
+                    <p>Macska</p>
+                    <a href=""><img src="images/categories/cat.png"></a>
+                </div>
+                <div class="kategoria">
+                    <p>Hal</p>
+                    <a href=""><img src="images/categories/fish.png"></a>
+                </div>
+                <div class="kategoria">
+                    <p>Madár</p>
+                    <a href=""><img src="images/categories/parrot.png"></a>
+                </div>
+                <div class="kategoria">
+                    <p>Nyúl</p>
+                    <a href=""><img src="images/categories/rabbit.png"></a>
+                </div>
+                <div class="kategoria">
+                    <p>Ló</p>
+                    <a href=""><img src="images/categories/horse.png"></a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <form>
+                <div>
+                    <label for="nev">Név:</label>
+                    <input type="text" id="nev">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div>
+                    <label for="kor">Életkor:</label>
+                    <input type="number" id="kor">
+                </div>
+                
+                <div class="szeles">
+                    <label for="allat">Kedvenc állat:</label>
+                    <div>
+                        <label for="kutya"><input type="radio" name="allat" id="kutya">Kutya</label>
+                        <label for="macska"><input type="radio" name="allat" id="macska">Macska</label>
+                        <label for="hal"><input type="radio" name="allat" id="hal">Hal</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="hirlevel"><input type="checkbox" id="hirlevel">Kérek hírlevelet!</label>
+                </div>
+
+                <div>
+                    <input type="button" value="Küldés">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

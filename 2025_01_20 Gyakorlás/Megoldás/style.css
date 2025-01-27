@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header*/
+header{
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img{
+    width: 80px;
+    margin: 10px;
+    border-radius: 10px;
+
+
+    box-shadow: 4px 4px 8px white, -4px -4px 8px white;
+    animation-name: mozgas;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mozgas{
+    0%{
+        transform: translateX(-200px);
+    }
+    50%{
+        transform: translate(200px) scaleX(-1);
+    }
+    100%{
+        transform: translate(-200px);
+    }
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    animation-name: megjelenes;
+    animation-duration: 5s;
+}
+
+@keyframes megjelenes{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Section*/
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background-color: #f1f1f1;
+}
+
+.gallery-item{
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px gray;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.gallery-item:hover{
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-item img{
+    width: 100%;
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+}
+.gallery-item p{
+    text-align: center;
+    color: gray;
+    padding: 15px;
+}
+
+/*Footer*/
+footer{
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    animation-name: felkuszas;
+    animation-duration: 5s;
+}
+
+@keyframes felkuszas{
+    0%{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
