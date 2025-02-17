@@ -67,3 +67,27 @@ do{
 console.log(sz);
 
 // HF "feladatok 2021-2022.pdf" - 1-25 feladat csütörtök
+
+// [a,b] ~ [1,6]
+
+// Math.random() -> ]0,1[
+// Math.random() * 1000 -> ]0,1[ * 1000 = ]0,1000[ 
+// Math.random() + 31 -> ]0,1[ + 31 = ]31,32[
+// Math.random() + 31 * 1000 -> ]0,1[+31000 = ]31000,31001[
+// (Math.random() + 31) * 1000 -> ]31,32[*1000 = ]31000,32000[
+// Math.random() * 6 + 1  -> ]0,6[ + 1 = ]1,7[ 
+let rnd = Math.random() * 6 + 1;
+console.log(Math.floor(rnd));
+
+//[-10,5] -> 16db -10
+// 16 = 5 -(-10) + 1
+
+for(let i = 0; i<20; i++)
+{
+    rnd = Math.random() * 16 - 10;
+    console.log(Math.floor(rnd));
+}
+//a<b; [a,b] -> Math.floor( Math.random() * (b-a+1) + a ); 
+
+// HF 1-29.
+
