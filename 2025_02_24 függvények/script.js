@@ -32,6 +32,59 @@ function TombAtlag(tomb){
     return osszeg / tomb.length;
 }
 
+function TombMaxIndex(tomb){
+    let maxi = 0;
+    for(let i = 1; i<tomb.length; i++){
+        if(tomb[i]>tomb[maxi])
+            maxi = i;
+    }
+    return maxi;
+}
+
+function VaneElem(tomb, szam){
+    let i = 0;
+    while(i<tomb.length && tomb[i] != szam){
+        i++;
+    }
+    return i<tomb.length;
+}
+
+function NegativDarab(tomb){
+    let db = 0;
+    for(let i = 0; i<tomb.length; i++){
+        if(tomb[i] < 0){
+            db++;
+        }
+    }
+    return db;
+}
+
+function PozitivAtlag(tomb)
+{
+    let osszeg = 0;
+    let db = 0;
+    for(let i = 0; i<tomb.length; i++){
+        if(tomb[i]>0){
+            osszeg += tomb[i];
+            db++;
+        }
+    }
+    return osszeg / db;
+}
+
+function HanyadikHelyenVan(tomb, szam){
+    let i = 0;
+    while(i<tomb.length && tomb[i] != szam){
+        i++;
+    }
+    if(i<tomb.length){
+        return i;
+    }
+    else{
+        return -1;
+    }
+}
+
 function main(){
     console.log("Függvény belső magja");
     ertekekMegadasa();   
@@ -48,11 +101,22 @@ function main(){
 
     let atlag = TombAtlag(tomb);
     console.log("Tömb elemeinek átlaga:"+atlag.toFixed(2));
-    //console.log("max:"+TombMaxIndex(tomb));
-    //console.log("Van-e nulla: "+VaneElem(tomb,0));
+    console.log("Maximum érték helye:"+(TombMaxIndex(tomb)+1));
+    console.log("Van-e nulla: "+VaneElem(tomb,0));
     //Hány darab negatív szám van?
+    console.log(NegativDarab(tomb)+" darab negatív szám van.");
     //Pozitív számok átlaga?
+    console.log("A pozitív számok átlaga: "+
+        PozitivAtlag(tomb).toFixed(2));
     //Ha van benne 10-es akkor hányadik helyen?
+    let index = HanyadikHelyenVan(tomb, 10);
+    if(index >= 0)
+        console.log((index+1)+". helyen van a 10es");
+    else
+        console.log("nincs benne 10es");
+
+    //Hf rendezés
+    // szűrd ki az egyedi értékeket, ha valamelyik több van, csak egyet használsz!
 }
 
 main();
