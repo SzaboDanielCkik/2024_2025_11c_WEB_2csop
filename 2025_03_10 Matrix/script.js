@@ -103,6 +103,20 @@ function legtobbNullaOszlopIndex(matrix){
     return maxi;
 }
 
+function vaneTombbenSzam(tomb, szam){
+    let i = 0;
+    while(i<tomb.length && tomb[i] !== szam){
+        i++;
+    }
+    return i<tomb.length;
+}
+
+function vaneCsakNullaSor(matrix){
+    const tomb = egyesDbKigyujteseTombbe(matrix);
+    const vane = vaneTombbenSzam(tomb, 0);
+    return vane;
+}
+
 function main(){
     // let matrix = [[]];
     // matrix.push = [2,3,3,4,5];
@@ -124,7 +138,8 @@ function main(){
     const index2 = legtobbNullaOszlopIndex(matrix);
     console.log(index2);
     // Van-e olyan sor, amiben csak nullák vannak?
-
+    let vane = vaneCsakNullaSor(matrix);
+    console.log(vane);
 }
 
 main();
