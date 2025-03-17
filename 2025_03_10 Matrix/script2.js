@@ -5,6 +5,7 @@
     2. Adja meg a legnagyobb érték sorát és oszlopát!
     3. Adja meg hány darab nulla van!
     4. Van-e a kétjegyű számok között 7-tel osztható, van hányadik sor és oszlop!
+    5. Készítsen egy nxn-es mátrixot, és adja meg a két átló összegének különbségét!
 
 */
 
@@ -50,6 +51,34 @@ function maxSorOszlop(matrix){
     return [maxi, maxj];
 }
 
+function megszamolSzam(matrix, szam){
+    let darab = 0;
+    for(let i = 0; i<matrix.length; i++){
+        for(let j = 0; j<matrix[i].length; j++){
+            if(matrix[i][j] === szam){
+                darab++;
+            }
+        }
+    }
+    return darab;
+}
+
+function vaneSzammalOszthatoIndex(matrix, szam){
+    let i = 0;
+    let j = 0;
+    while(i<matrix.length){
+        j = 0;
+        while(j<matrix[i].length && !(matrix[i][j]>9 && matrix[i][j] % szam === 0)){
+            j++;
+        }
+        if(j<matrix[i].length){
+            return [i,j];
+        }
+        i++;
+    }
+    return [-1, -1];
+}
+
 function main(){
     const n = random(5,20);
     const m = random(5,20);
@@ -58,6 +87,19 @@ function main(){
 
     let maxij = maxSorOszlop(matrix);
     console.log(maxij);
+
+    let darabSzam = megszamolSzam(matrix, 0);
+    console.log(darabSzam);
+
+    const szam = 7;
+    let vaneIndex = vaneSzammalOszthatoIndex(matrix, szam);
+    console.log(vaneIndex);
+    if(vaneIndex[0] !== -1){
+        console.log(`Van benne ${szam}-val osztható szám, (${vaneIndex[0]},${vaneIndex[1]}) helyen.`);
+    }
+    else{
+        console.log(`Nincs benne ${szam}-val osztható szám.`);
+    }
 }   
 
 main();
