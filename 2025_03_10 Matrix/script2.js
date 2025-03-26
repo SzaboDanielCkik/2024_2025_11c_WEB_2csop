@@ -79,6 +79,40 @@ function vaneSzammalOszthatoIndex(matrix, szam){
     return [-1, -1];
 }
 
+function foAtloOsszege(matrix){
+    let osszeg = 0;
+    for( let i = 0; i<matrix.length; i++){
+        osszeg+= matrix[i][i];
+    }
+    return osszeg;
+}
+
+function mellekAtloOsszege(matrix){
+    let osszeg = 0;
+    for( let i = 0; i<matrix.length; i++){
+        osszeg+= matrix[i][matrix.length - i - 1];
+    }
+    return osszeg;
+}
+
+function transponalas(matrix){
+    let tMatrix = matrix;
+    for(let i = 0; i<matrix.length; i++){
+        for(let j = 0; j<matrix[i].length; j++){
+            tMatrix[i][j] = matrix[j][i];
+        }
+    }
+    return tMatrix;
+}
+
+
+function atlokKulonbsege(matrix){
+    const foatlo = foAtloOsszege(matrix);
+    const mellekatlo = mellekAtloOsszege(matrix);
+    //console.log(foatlo+ " " + mellekatlo);
+    return Math.abs(foatlo-mellekatlo);
+}
+
 function main(){
     const n = random(5,20);
     const m = random(5,20);
@@ -100,6 +134,15 @@ function main(){
     else{
         console.log(`Nincs benne ${szam}-val osztható szám.`);
     }
+
+
+    const ujMatrix = matrixFeltoltes(5,5);
+    console.table(ujMatrix);
+    const kulonbseg = atlokKulonbsege(ujMatrix);
+    console.log(kulonbseg);
+
+    const transponalt = transponalas(ujMatrix);
+    console.table(transponalt);
 }   
 
 main();
