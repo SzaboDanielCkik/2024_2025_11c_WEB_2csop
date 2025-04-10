@@ -47,6 +47,20 @@ function keretezes(){
     }
 }
 
+function Belepes(){
+    //objektum.value -> beírt szöveg
+    // console.log(document.getElementById("azonosito").value);
+    // console.log(document.getElementById("jelszo").value);
+    //const azon = document.getElementById("azonosito");
+    const azon = document.querySelector("#azonosito");
+    console.log(azon.value+" "+azon.style.width);
+
+
+    //const jelsz = document.getElementById("jelszo");
+    const jelsz = document.querySelector("#jelszo");
+    console.log(jelsz.value);
+}
+
 function main(){
     elsoOra();
     masodikOra();

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM alapok</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -16,6 +17,39 @@
     <button onclick="keretezes()">
         Keretezés
     </button>
+
+    <div style="background-color: green;padding: 5px;">
+        <p>
+            <label>Azonosito</label>
+            <input id="azonosito" type="text" placeholder="pl. Név">
+        </p>
+        <p>
+            <label>Jelszó</label>
+            <input id="jelszo" type="password" placeholder="pl. Jelszo">
+        </p>
+        <p>
+            <button onclick="Belepes()">Belépés</button>
+        </p>
+    </div>
+
+    <div style="background-color: green;padding: 5px;">
+        <p>
+            <label>a:</label>
+            <input id="aSzam" type="number">
+        </p>
+        <p>
+            <label>b:</label>
+            <input id="bSzam" type="number">
+        </p>
+        <p>
+            <label>c:</label>
+            <input id="cSzam" type="number">
+        </p>
+        <p>
+            <button onclick="MasodfokuMegoladas()">Belépés</button>
+        </p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
