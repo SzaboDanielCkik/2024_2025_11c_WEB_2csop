@@ -32,3 +32,14 @@ function masodfoku()
         kettoMegoldasKiiratasa(a,b,D);
     }
 }
+
+function Kivalasztas(){
+    const select = document.getElementById("autoSelect");
+    const label = document.getElementById("autoLabel");
+    const index = select.selectedIndex;
+    const auto = select[index].value;
+    //alert(auto);
+    //console.log(auto);
+    label.innerText = auto;
+
+}
