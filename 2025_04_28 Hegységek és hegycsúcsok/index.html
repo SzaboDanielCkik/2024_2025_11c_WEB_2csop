@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hegysegek</title>
+</head>
+<body>
+    <div>
+        <h1>Hegységek és hegycsúcsok teszt</h1>
+        <ol>
+            <li>
+                Melyik hegységünknek a legmagasabb pontja a <b>Csóványos</b>?
+                <p>
+                    <input type="radio" name="elso" id="badacsony">
+                    <label for="badacsony">Badacsony</label>
+                    <br>
+                    <input type="radio" name="elso" id="bakony">
+                    <label for="bakony">Bakony</label>
+                    <br>
+                    <input type="radio" name="elso" id="börzsöny">
+                    <label for="börzsöny">Börzsöny</label>
+                    <br>
+                    <input type="radio" name="elso" id="bükk">
+                    <label for="bükk">Bukk</label>
+                </p>
+            </li>
+            <li>
+                Melyik a <b>Zempléni-hegység</b> legmagasabb csúcsa?                
+            </li>
+            <li>
+                Melyek a  <b>Dunántúli-középhegység</b> részei?
+                <p><i>Több helyes válasz is lehetséges!</i></p>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="harmadik" id="budaihegyseg"><label for="budaihegyseg">Budai-hegység</label></td>
+                        <td><input type="checkbox" name="harmadik" id="mecsek"><label for="mecsek">Mecsek</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="harmadik" id="cserhat"><label for="cserhat">Cserhát</label></td>
+                        <td><input type="checkbox" name="harmadik" id="pilis"><label for="pilis">Pilis</label></td>                        
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="harmadik" id="gerecse"><label for="gerecse">Gerecse</label></td>
+                        <td><input type="checkbox" name="harmadik" id="vertes"><label for="vertes">Vértes</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="harmadik" id="keszthelyihegyseg"><label for="keszthelyihegyseg">Keszthelyi-hegység</label></td>
+                        <td><input type="checkbox" name="harmadik" id="zselic"><label for="zselic">Zselic</label></td>
+                    </tr>
+                </table>              
+            </li>
+        </ol>
+        <hr>
+        <button onclick="kiertekeles()">Teszt lezárása és válaszok elküldése</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
