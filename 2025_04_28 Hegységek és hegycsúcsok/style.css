@@ -1,0 +1,17 @@
+#kepA{
+    background-image: url(1.png);
+}
+#kepB{
+    background-image: url(2.png);
+}
+#kepC{
+    background-image: url(3.png);
+}
+#kepD{
+    background-image: url(4.png);
+}
+#kepA,#kepB,#kepC,#kepD{
+    width: 250px;
+    height: 160px;
+    background-size: contain;
+}

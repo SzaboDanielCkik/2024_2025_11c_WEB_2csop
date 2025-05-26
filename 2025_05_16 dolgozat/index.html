@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM dolgozat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <p>
+            Írass ki a számokt 1-től az input mezőben megadott számig. Ha be van kattintva a léptetés, akkor lehessen kiválasztani, hogy hányassával. Ha nincs, akkor egyesével!
+        </p>
+        <label>Eddig:</label><input id="eddig" type="number" max="200" min="10">
+        <br>
+        <input type="checkbox" id="checkbox" onchange="changeEnable()"><label>Léptetés???</label>
+        <br>
+        <label class="keretezes szinezes meretezes">Léptetés:</label><input id="leptetes" disabled type="number" max="3" min="1">
+        <br>
+        <button onclick="kiiratas()">Kiíratás</button>
+        <label id="eredmeny">Eredmény</label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -44,3 +44,7 @@ function kiertekeles(){
     pont += harmadikFeladatEllenorzes();
     console.log(pont);   
 }
+
+function betuMegjelenites(betu){
+    document.getElementById("kepButton").innerText = betu;
+}

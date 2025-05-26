@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Hegysegek</title>
 </head>
 <body>
@@ -49,6 +50,15 @@
                         <td><input type="checkbox" name="harmadik" id="zselic"><label for="zselic">Zselic</label></td>
                     </tr>
                 </table>              
+            </li>
+            <li>
+                Melyik térkép jelzi pirossal a  <b>Bükk-hegységet</b>?
+                <button id="kepButton">?</button>
+                <p><i>Kattints a kiválasztott képre!</i></p>
+                <div id="kepA" onclick="betuMegjelenites('A')">A</div>
+                <div id="kepB" onclick="betuMegjelenites('B')">B</div>
+                <div id="kepC" onclick="betuMegjelenites('C')">C</div>
+                <div id="kepD" onclick="betuMegjelenites('D')">D</div>
             </li>
         </ol>
         <hr>
