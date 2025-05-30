@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <table>
+        <tr>
+            <td>
+                <button onclick="Elozore()">Előző</button>
+            </td>
+            <td>
+                <img id="kep" src="kepek/image-1.jpg" width="200">
+            </td>
+            <td>
+                <button onclick="Kovetkezore()">Következő</button>
+            </td>
+        </tr>
+    </table>
+
     <input id="dbInput" type="number">
     <button onclick="kockaGeneralas()">Kockagenerálás</button>
-    <label>Összeg:</label>
+    <label id="osszegLabel">Összeg:</label>
     <div id="kockaDiv"></div>
     <script src="script.js"></script>
 </body>
